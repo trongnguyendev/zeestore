@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 74px;
+}
+.product-block{
+    height: 357px;
+}
+.product-img img{
+    width: 100%;
+}
+.wrapper-heading{
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+.wrapper-heading h2{
+    font-size: 28px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+    font-weight: 500;
+    position: relative;
+    padding: 0 0 10px;
+    display: inline-block;
+}
+.wrapper-heading h2 a{
+    text-decoration: none;
+    color: #000;
+}
+.wrapper-heading h2::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 55px;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    background: #000000;
+}
+.wrapper-heading h2 a:hover{
+    color: #00a2a2;
+}
+.box-pro-detail .pro-name{
+    z-index: 9;
+    width: 100%;
+}
+.box-pro-detail h3{
+    margin: 0 0 5px;
+    font-size: 14px;
+    position: relative;
+}
+.product-detail{
+    padding: 20px 0;
+    text-align: center;
+}
+.product-detail h3 a{
+    color: #000;
+    line-height: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.product-detail h3 a:hover{
+    color: #00a2a2;
+}
+.product-detail a{
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.product-detail a:hover{
+    color: #00a2a2;
+}
+.fa-star:before{
+    color: #FFD700;
+}
+.product-img .product-sale{
+    top: 10px;
+    left: 10px  ;
+    color: #f94c43;
+    position: absolute;
+    background: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    z-index: 9;
+}
+.product-img{
+    position: relative;
+}
+.pro-prices{
+    color: #f94c43;
+    margin: 0;
+    font-weight: 700;
+}
+.pro-prices .pro-price-del{
+    color: #939393;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+.action_button button{
+    color: #fff;
+    width: 49%;
+    float: left;
+    padding: 5px;
+    margin-left: 1px;
+    border: none;
+    font-size: 14px;
+}
+.action_button .add-to-cart{
+    background: #f797a7;
+}
+.action_button .buynow{
+    background: #00a2a2;
+}
+.hover-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.product-block:hover .hover-img{
+    opacity: 1;
+    color: aqua;
+}
