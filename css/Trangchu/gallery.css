@@ -27,10 +27,12 @@
 }
 .list-gallery ul{
     display: flex;
-    align-items: center;
+    align-content: center;
     padding: 0px;
+    margin: 0px;
 }
 .list-gallery ul li{
+    
     padding: 2px;
     list-style: none;
 }
@@ -67,8 +69,11 @@
 		left: 150%;
 	}
 }
-
-
 .gallery_item img{
-    width: 100%;
+    max-width: 100%;
+}
+@media screen and (max-width:800px){
+    .list-gallery ul{
+        align-content: flex-start;
+    }
 }
